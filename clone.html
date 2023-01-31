@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> MYSTRY IS HIDDEN </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: azure;
+            line-height: 1.7;
+            padding:40px;
+
+
+        }
+
+        .header {
+            height: 90vh;
+
+            background: linear-gradient(to right bottom, rgba(126, 213, 112, 0.8 ),rgba(40, 100, 131, 0.8)), url(C:/Users/punee/Downloads/pexels-craig-adderley-1563356.jpg);
+            background-size: cover;
+            background-position: top;
+            clip-path: polygon(0 0 , 100% 0, 100% 87% , 0 100%);
+            position: relative;
+
+        }
+        .logo-box{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+        .logo{
+            height: 35px;
+            }
+        .logo:hover{
+        animation-name: moveInRight;
+            animation-duration: 1s;
+            animation-timming: ease-out;
+            }
+        .text-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+        heading-primary{
+            color: #FDFDFD;
+
+            backface-visibility: hidden;
+            }
+
+        .heading-primary-main{
+            display: block;
+            font-size:40px;
+            font-weight:400px;
+            letter-spacing:20px;
+
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timming:  ease-out;
+
+
+        }
+
+        .heading-primary-sub{
+            display: block;
+            font-size: 10px;
+            font-weight: 200px;
+            letter-spacing:17px;
+
+            animation-name: moveInRight;
+            animation-duration: 1s;
+            animation-timming: ease-out;
+        }
+
+
+        @keyframes moveInLeft {
+            0%{
+          opacity: 0;
+          transform: translateX(-100px)
+            }
+            80%{
+                transform: translateX(10px);
+            }
+            100%{
+            opacity: 1;
+            transform: translateX(0);
+            }
+        }
+        @keyframes moveInRight {
+            0%{
+          opacity: 0;
+          transform: translateX(100px);
+            }
+            80%{
+                transform: translateX(-10px);
+            }
+            100%{
+            opacity: 1;
+            transform: translateX(0px);
+            }
+        }
+        @keyframes moveInBottom {
+            0%{
+          opacity: 0;
+          transform: translateY(30px);
+            }
+            100%{
+            opacity: 1;
+            transform: translateX(0px);
+            }
+          }
+        .btn:link,
+        .btn:visited{
+          text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            margin-top:40px;
+            border-radius:100px;
+            transition: all .2s;
+            position:relative;
+        }
+        .btn-white{
+          background-color: white;
+          color: #777;
+        }
+        .btn:hover{
+          transform: translateY(-20px);
+          box-shadow: 0 10px 20px rgba(0,0,...2);
+        }
+        .btn:active{
+          transform: translateY(-1px);
+          box-shadow: 0 10px 20px rgba(0,0,...2);
+        }
+        .btn::after {
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          border-radius: 100px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index:-1px;
+          transition: all .4s;
+        }
+        .btn-white::after {
+          background-color: white;
+        }
+        .btn:hover::after {
+          transform: scaleX(1.4) scaleY(1.5);
+          opacity:0;
+        }
+btn-animated{
+  animation: moveInBottom .5s easeout;
+}
+    </style>
+</head>
+
+<body>
+    <header class=" header">
+        <div class="logo-box">
+        <img src= "preview.jpg" alt="logo" class="logo">
+        </div>
+        <div class= "text-box">
+        <h1 class= "heading-primary">
+        <span class="heading-primary-main">  SILENT WORLD </span>
+        <span class="heading-primary-sub">  MYSTRY OF WORLD IS UNTOLD </span>
+      </h1>
+      <a  href="https://youtu.be/4qsgv9YFjHY" class="btn btn-white btn;animated" target= blank> UNVEIL THE MYSTRY </a>
+        </div>
+
+
+    </header>
+</body>
+
+</html>
